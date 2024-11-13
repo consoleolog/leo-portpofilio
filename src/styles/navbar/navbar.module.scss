@@ -1,6 +1,13 @@
+.header {
+  width: 100%;
+  height: 50px;
+  border: solid 1px red;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
 }
 .row {
   margin-right: -15px;
