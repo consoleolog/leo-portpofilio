@@ -5,7 +5,7 @@ export default async function handler(req, res){
 
 
     if (req.method === 'POST'){
-        const db = await container.db;
+        const db = container.db;
 
 
 

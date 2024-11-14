@@ -2,6 +2,7 @@
   "name": "cr-portpofilo",
   "version": "0.1.0",
   "private": true,
+  "license": "ISC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/pg-adapter": "^1.7.3",
     "@reduxjs/toolkit": "1.8.1",
     "@tanstack/react-query": "4",
     "@toast-ui/react-editor": "^3.2.3",

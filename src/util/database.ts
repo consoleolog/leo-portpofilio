@@ -15,12 +15,12 @@ export class DatabaseConfig {
         });
     }
 
-    public async connectDB(){
-        this._rdb.connect().then(()=>{
-            return this._rdb;
-        }).catch((error: any)=>{
+    async connectDB(){
+        const db = this._rdb.connect().then(()=> this._rdb)
+            .catch((error: any)=>{
             throw Error(`DB connection fail , error msg : ${error}`);
         });
+        return await db;
     }
 
 

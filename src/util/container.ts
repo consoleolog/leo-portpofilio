@@ -1,4 +1,4 @@
-import {MemberService} from "@/service/memberService";
+import {MemberService} from "@/service/MemberService";
 import {DatabaseConfig} from "@/util/database";
 
 export class Container{
