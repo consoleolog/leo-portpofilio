@@ -4,29 +4,32 @@
     /* 기본 옵션
      * ------------------------------------------------------------------------------------------------------------------------------------------------ */
     // "incremental": true,                   /* 증분 컴파일 활성화 */
-    "target": "es5",                          /* ECMAScript 목표 버전 설정: 'ES3'(기본), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "target": "ES2017",                          /* ECMAScript 목표 버전 설정: 'ES3'(기본), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
     "module": "esnext",                       /* 생성될 모듈 코드 설정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
     "lib": ["dom", "dom.iterable", "esnext"], /* 컴파일 과정에 사용될 라이브러리 파일 설정 */
     "allowJs": true,                          /* JavaScript 파일 컴파일 허용 */
     "checkJs": true,                       /* .js 파일 오류 리포트 설정 */
-    "jsx": "react",                           /* 생성될 JSX 코드 설정: 'preserve', 'react-native', or 'react'. */
+    "jsx": "preserve",                           /* 생성될 JSX 코드 설정: 'preserve', 'react-native', or 'react'. */
     // "declaration": true,                   /* '.d.ts' 파일 생성 설정 */
     // "declarationMap": true,                /* 해당하는 각 '.d.ts'파일에 대한 소스 맵 생성 */
     // "sourceMap": true,                     /* 소스맵 '.map' 파일 생성 설정 */
     // "outFile": "./",                       /* 복수 파일을 묶어 하나의 파일로 출력 설정 */
-    "outDir": "./dist",                    /* 출력될 디렉토리 설정 */
-    // "rootDir": "./",                       /* 입력 파일들의 루트 디렉토리 설정. --outDir 옵션을 사용해 출력 디렉토리 설정이 가능 */
+//    "outDir": "./dist",                    /* 출력될 디렉토리 설정 */
+     "rootDir": "./",                       /* 입력 파일들의 루트 디렉토리 설정. --outDir 옵션을 사용해 출력 디렉토리 설정이 가능 */
     // "composite": true,                     /* 프로젝트 컴파일 활성화 */
-    "tsBuildInfoFile": "./",               /* 증분 컴파일 정보를 저장할 파일 지정 */
+//    "tsBuildInfoFile": "./",               /* 증분 컴파일 정보를 저장할 파일 지정 */
     "removeComments": true,                /* 출력 시, 주석 제거 설정 */
     "noEmit": true,                           /* 출력 방출(emit) 유무 설정 */
-    "importHelpers": true,                 /* 'tslib'로부터 헬퍼를 호출할 지 설정 */
+//    "importHelpers": true,                 /* 'tslib'로부터 헬퍼를 호출할 지 설정 */
     "downlevelIteration": true,            /* 'ES5' 혹은 'ES3' 타겟 설정 시 Iterables 'for-of', 'spread', 'destructuring' 완벽 지원 설정 */
-    "isolatedModules": true,                  /* 각 파일을 별도 모듈로 변환 ('ts.transpileModule'과 유사) */
-
+//    "isolatedModules": true,                  /* 각 파일을 별도 모듈로 변환 ('ts.transpileModule'과 유사) */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
     /* 엄격한 유형 검사 옵션
      * ------------------------------------------------------------------------------------------------------------------------------------------------ */
-    "strict": true,                           /* strict 관련, noimplicit 어쩌구 관련 모드 전부 켜기 */
+    "strict": false,                           /* strict 관련, noimplicit 어쩌구 관련 모드 전부 켜기 */
     // "noImplicitAny": true,                 /* any 타입 금지 여부 */
     // "strictNullChecks": true,              /* null, undefined 타입에 이상한 짓 할시 에러내기 */
     // "strictFunctionTypes": true,           /* 함수파라미터 타입체크 강하게 */
